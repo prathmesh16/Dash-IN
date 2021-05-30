@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                    <RelativeLayout
+                        android:layout_width="140dp"
+                        android:layout_height="80dp"
+                        android:paddingVertical="4dp">
+
+                        <ImageView
+                            android:id="@+id/sort_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginLeft="3dp"
+                            android:src="@drawable/image6"/>
+
+                        <TextView
+                            android:id="@+id/sort_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/robotocondensedbold"
+                            android:gravity="center"
+                            android:text="Sandwiches"
+                            android:textColor="@color/white"
+                            android:textSize="40sp"
+                            android:maxLines="1"
+                            android:paddingHorizontal="3dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="20sp"
+                            android:autoSizeMaxTextSize="33sp"
+                            android:autoSizeStepGranularity="2sp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerModule.activities.DetailedBillAndRepeat"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <TextView
+        android:id="@+id/TitleHolder"
+        android:layout_width="350dip"
+        android:layout_height="25dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="25dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/helveticaneuemedium500"
+        android:paddingLeft="3dp"
+        android:text="Mess name"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/AddressHolder"
+        android:layout_width="350dip"
+        android:layout_height="50dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:paddingLeft="3dp"
+        android:text="Address line\nAddress line\nAddress line"
+        android:textSize="14dp" />
+    <View
+        android:layout_width="370dip"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#e9e9e9"
+        android:layout_marginTop="10dp"
+        />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_width="350dip"
+            android:layout_marginLeft="25dip"
+            android:id="@+id/DelOrTakeHolder"
+            android:textColor="@color/black"
+            android:fontFamily="@font/helveticaneuemedium500"
+            android:paddingLeft="3dp"
+            android:text="This order was a Home delivery"
+            android:textSize="18dip"
+            android:ellipsize="end"
+            />
+    <View
+        android:layout_width="370dip"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#e9e9e9"
+        android:layout_marginTop="10dip"
+        />
+    <TextView
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dip"
+        android:layout_marginLeft="25dip"
+        android:textColor="@color/black"
+        android:fontFamily="@font/helveticaneuemedium500"
+        android:paddingLeft="3dp"
+        android:text="Your order"
+        android:textSize="20dp"
+        android:ellipsize="end"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="360dip"
+            android:layout_gravity="center"
+            android:layout_height="280dip"
+            android:layout_marginTop="10dip"
+            android:padding="10dip"
+            android:background="@drawable/background_for_item_list"
+            android:id="@+id/ItemList"
+            android:elevation="3dip"
+
+            />
+
+    <TextView
+        android:layout_width="150dip"
+        android:layout_height="25dp"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="15dip"
+        android:ellipsize="end"
+        android:fontFamily="@font/helveticaneuemedium500"
+        android:paddingLeft="3dp"
+        android:text="TOTAL"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/SubTotalInDetail"
+        android:layout_width="130dip"
+        android:layout_height="25dp"
+        android:layout_marginLeft="150dip"
+        android:layout_marginTop="-40dip"
+        android:ellipsize="end"
+        android:fontFamily="@font/helveticaneuemedium500"
+        android:gravity="left"
+        android:text="XXX"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/ReSubmit"
+        android:layout_width="220dp"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/button_in_orders"
+        android:text="BUY AGAIN"
+        android:textColor="#FFFFFF"
+        android:textSize="30dip" />
+    <View
+        android:layout_width="370dip"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#e9e9e9"
+        android:layout_marginTop="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="130dip"
+        android:layout_marginLeft="20dip"
+        android:paddingLeft="3dp"
+        android:text="Disclaimer:"
+        android:textAllCaps="true"
+        android:textSize="20dip"
+        android:ellipsize="end"
+        android:textColor="#ff6666"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dip"
+        android:layout_width="370dip"
+        android:layout_marginLeft="20dip"
+        android:paddingLeft="3dp"
+        android:text="                            The prices in this bill are according to previous invoice. A Repeat\norder might not result in same bill amount."
+        android:textSize="18dip" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:background="#fff"
+    tools:context=".VerificationActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/bgcolor"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/robotocondensedbold"
+            android:gravity="center"
+            android:text="Verification"
+            android:textColor="@color/white"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="140dp"
+            android:background="@drawable/login" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Please enter the Verification Code sent to"
+        android:textSize="16sp"
+        android:textColor="@color/grey"/>
+
+    <TextView
+        android:id="@+id/receivedno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/robotocondensedbold"
+        android:textColor="@color/bgcolor"
+        android:textSize="15sp"/>
+
+
+    <com.chaos.view.PinView
+        android:id="@+id/firstPinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="48dp"
+        app:itemRadius="2dp"
+        app:itemSpacing="2dp"
+        app:itemWidth="40dp"
+        app:lineWidth="1dp"
+        app:viewType="rectangle"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="00"
+        android:textColor="@color/bgcolor"
+        android:layout_gravity="center"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Didn't Receive Verification Code? "
+            android:textSize="18sp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:id="@+id/resend_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Resend."
+            android:textColor="@color/bgcolor"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nexthome"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_rectangle_pink"
+        android:layout_gravity="center"
+        android:text="Verify"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/appname"
+        style="@style/Bold"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/robotocondensedbold"
+        android:layout_height="83dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="70dp"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/bgcolor"
+        android:textSize="35sp" />
+
+</LinearLayout>

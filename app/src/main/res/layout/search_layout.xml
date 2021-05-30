@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+**  IMP IMP IMP for the developer accessing this file, if you want to view what's behind
+    the weird recyclerview below the AutoCompleteTextView, just hide @+id/searchResults.
+    In the actual execution, this is not what the user sees at first. (-Heramb )
+-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:src="@drawable/background_image"/>
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ioc_iocn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:fontFamily="sans-serif-medium"
+            android:textSize="15sp"
+            android:id="@+id/live_loc_text"
+            android:textColor="@color/black"/>
+<!--
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/ioc_down_arrow_icon"/>
+            -->
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/search"
+        android:layout_width="380dp"
+        android:layout_height="40dip"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/search_hint"
+        android:drawableLeft="@drawable/search"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:iconifiedByDefault="false"
+        android:completionThreshold="1"
+        android:background="@drawable/rectangle51"
+        android:queryBackground="@null"
+        android:imeOptions="actionSearch"
+        android:inputType="textAutoComplete|textAutoCorrect"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneuemedium500"
+            android:text="Recently Searched"
+            android:textSize="15sp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneuemedium500"
+            android:text="Clear"
+            android:textSize="17sp"
+            android:textColor="@color/pink_layout"
+            android:id="@+id/clear"
+            android:layout_marginRight="30dp"
+            android:gravity="right|end"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstText"
+        android:background="@drawable/rectangle52">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clock"/>
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="23dp"
+            android:fontFamily="@font/helveticaneuemedium500"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="1"
+            android:id="@+id/search1"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="160dp"
+        android:layout_toRightOf="@+id/firstText"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle52">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clock"/>
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="16dp"
+            android:fontFamily="@font/helveticaneuemedium500"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="23dp"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="1"
+            android:id="@+id/search2"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle52">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clock"/>
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="23dp"
+            android:fontFamily="@font/helveticaneuemedium500"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="1"
+            android:id="@+id/search3"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="160dp"
+        android:layout_toRightOf="@+id/firstText"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle52">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/clock"/>
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="16dp"
+            android:fontFamily="@font/helveticaneuemedium500"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="23dp"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="1"
+            android:id="@+id/search4"
+            />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="380dip"
+        android:layout_height="560dip"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/search"
+        android:layout_marginTop="5dip"
+        android:background="@color/white"
+        android:id="@+id/searchResults"
+
+        />
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:verticalScrollbarPosition="defaultPosition"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:isScrollContainer="false"
+            app:menu="@menu/bottom_navigation"
+            android:background="?android:attr/windowBackground"
+            app:itemTextColor="@color/tab_bottom_color"
+            app:itemIconTint="@color/tab_bottom_color"
+            app:labelVisibilityMode="labeled"/>
+    </LinearLayout>
+
+</RelativeLayout>
